@@ -1,7 +1,6 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <cintypes>
 #include "/public/read.h"
 using namespace std;
 
@@ -24,7 +23,7 @@ int main() {
     string tweet = readline(trump_file, ',');
     if (!trump_file) {
         cout << "Bad File!\n";
-        return 0
+        return 0;
     }
     cout << "1.) Would you like to see Trumps tweet from a specific date?\n2.) Would you like to see a Trump tweet that contains a specific word?\n3.) Would you like to see Trumps Top 10 tweets\n5.) Would you like to the the most recent tweet from Trump\n6.) Would you like to see the oldest tweet from Trump\n6.) Would you like to see a Trump tweet about immigrants?" << endl;
     cin >> choice;
@@ -36,10 +35,8 @@ int main() {
         cin >> specificWord;
         if (!cin) {
             cout << "BAD INPUT!" << endl;
-            return 0
+            return 0;
         }
     }
 
 }
-~
-~
